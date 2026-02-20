@@ -7,7 +7,7 @@
 ## Abstract
 This repository presents an optimized Rainbow-lite DQN agent for the `Acrobot-v1` environment. By leveraging kinematic reward shaping and extended training schedules (1M steps), this implementation achieves a mean performance of **$-63.61 \pm 0.83$** over 1,000 evaluation episodes across 35 independent seeds. This result represents the near-theoretical limit of the environment's constrained physics.
 ![img.png](assets/img.png)
-![cross_val_stability.png](assets/cross_val_stability.png)
+![training_curve.png](assets/cross_val_stability.png)
 ## Core Architecture
 The agent implements a streamlined Rainbow stack, focused on reducing gradient variance:
 * **Dueling DQN:** Separate streams for $V(s)$ and $A(s, a)$.
@@ -43,3 +43,4 @@ The raw benchmark data is included for transparency:
 * `verify1e6_unique_seeds.csv`: Final results for 35 unique seeds.
 
 * `paired_delta_500k_vs_1e6_common30.csv`: Comparative delta analysis.
+
